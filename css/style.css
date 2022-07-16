@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 *{
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
+	font-family: 'Press Start 2P', cursive;
 }
 
 div.game-board {
@@ -11,8 +14,37 @@ div.game-board {
 	margin:0 auto;
 	position:relative;
 	overflow:hidden;
-	background: linear-gradient(#87CEEB, #E0F6FF)
+	background: linear-gradient(#87CEEB, #E0F6FF);
+	display: flex;
+	flex-direction: column;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.171);
+    font-size: 1.2em;
+    width: 100%;
+    padding: 30px;
+    margin: 0 0 15px;
+}
+
+div.restart {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	margin-top: 125px;
+	border: 2px solid rgb(14, 90, 14);
+	max-width: 300px;
+	height: 150px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: rgb(35, 168, 35);
+}
+
 
 .pipe{
 	position:absolute;
